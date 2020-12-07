@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>回调函数</title>
+	</head>
+
+	<body>
+		<button id="btn">测试点击事件!</button>
+		<!--
+			1 什么样的函数是回调函数？
+			三个特点：你没有调；你定义的；但最终它执行了
+			2 常见的回调函数
+			就是下面列举的两种
+		-->
+		<script>
+			document.getElementById("btn").onclick = function() {//DOM事件回调函数
+				alert(this.innerHTML);
+			}
+
+			//			  定时器: 延时定时器及循环定时器
+			setTimeout(function() {//定时器回调函数
+				alert("到点了")
+			}, 2000);
+		</script>
+	</body>
+
+</html>

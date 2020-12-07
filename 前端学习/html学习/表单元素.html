@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单元素</title>
+	</head>
+	<body>
+		<form action="xxx.php" method="get" >
+			<!--text单行文本框，用户可以在里面输入文字-->
+			
+			<lable for ="text">用户名：</lable><input type="text" name="username" value="请输入用户名" id="text" maxlength="6"/> <br>
+			<!--password：密码框。用户看不见输入的密码-->
+			密码：<input type="password" name ="pwd"/> <br>
+			<!--下拉列表-->
+			籍贯：<select>
+				<option>山东</option>
+				<option selected="selected">湖南</option>
+				<option>广东</option>
+				<option>重庆</option>
+				<option>上海</option>
+				<option>北京</option>
+				
+			</select>
+			<!--radio:单选框
+				name是表单元素的名字。这里单选框的各个选项的name必须相同，才可以实现多选一。
+				单选和复选框可以设置checked属性。这样可以在页面加载时默认选中。
+			-->
+			性别：<lable for="nan">男</lable><input type="radio" name="sex" value="男" id="nan" checked="checked">女<input type="radio" name="sex" value="女"><br>
+			<!--checkbox:复选框.name属性也应该是唯一的-->
+			爱好：吃饭<input type="checkbox" name="hobby" value="吃饭">睡觉 <input type="checkbox" name="hobby" value="睡觉">打豆豆<input type="checkbox" name="hobby" value="打豆豆" checked="checked">
+			<br>
+			<!--可以用textarea控件输入多行内容-->
+			自我介绍：<textarea cols="30" rows ="6">我正在自学JAVA.....</textarea>
+			<br>
+			<!--可以通过改变提交按钮submit的value属性设置不同的显示文字。默认为“提交”-->
+			<input type= "submit"  value="免费注册"/>
+			<input type="reset"><br>
+			<!--普通按钮button,后期结合JS搭配使用-->	
+			<input type ="button" value="获取短信验证码"/><br>
+			<!--文件域按钮 使用场景：上传文件使用-->
+			上传头像：<input type="file">
+				
+		</form>
+	</body>
+</html>

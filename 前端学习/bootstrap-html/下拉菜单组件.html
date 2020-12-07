@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>bootstrap中组件的使用</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!--引入 jquery核心js文件-->
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<!--引入bootstrap中核心js文件-->
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--基本实例 dropdown (下拉菜单)-->
+		<div class="dropdown">
+			<!--下拉按钮 -->
+			<button class="btn btn-primary" data-toggle="dropdown">选择课程<span class="caret"></span></button>
+			<!--下拉菜单-->
+			<ul class="dropdown-menu">
+				<li>
+					<a href="">springBoot</a>
+				</li>
+				<li>
+					<a href="">springMVC</a>
+				</li>
+				<li>
+					<a href="">springCloud</a>
+				</li>
+			</ul>
+			<!--开发一个下拉菜单包含以下3个步骤：
+	1 通过dropdown容器包裹下拉按钮和下拉菜单；
+	2 下拉菜单加入dropdown-menu样式
+	3 下拉按钮加入 data-toggle="dropdown"触发菜单的展示和隐藏
+-->
+		</div>
+	</body>
+
+</html>
